@@ -1,0 +1,12 @@
+.header_links {
+    &__ul {
+        list-style-type: none;
+        display: flex;
+        gap: 2rem;
+        &_li {
+            &__a {
+                text-decoration: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,34 @@
+.home {
+    max-width: 1440px;
+    height: 1024px;
+    position: relative;
+    background-image: url('../../img/homePage.png');
+    background-size: cover;
+    resize: both;
+
+    &__content {
+        width: 94%;
+        margin-left: auto;
+        margin-right: auto;
+        &_text {
+            width: 13rem;
+        }
+    }
+
+    &__contact {
+        display: flex;
+        gap: 2rem;
+        position: absolute;
+        top: 60rem;
+        right: 3rem;
+        &_item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            &_text {
+                text-decoration: none;
+            }
+        }
+    }
+}

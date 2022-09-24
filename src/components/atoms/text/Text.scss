@@ -1,0 +1,68 @@
+@import 'src/scss/fontSize.scss';
+@import 'src/scss/colors.scss';
+
+.text {
+    &__font {
+        &_size {
+            &_xxl {
+                font-size: $heading-one;
+            }
+            
+            &_xl {
+                font-size: $heading-two;
+            }
+
+            &_x {
+                font-size: $heading-three;
+            }
+
+            &_m {
+                font-size: $heading-four;
+            }
+
+            &_s {
+                font-size: $heading-five;
+            }
+
+            &_xs {
+                font-size: $default-p;
+            }
+        }
+
+        &_color {
+            &_black {
+                color: black;
+            }
+
+            &_light_black {
+                color: $project-label-color;
+            }
+
+            &_white {
+                color: white;
+            }
+
+            &_gray {
+                color: $contact-text-color;
+            }
+
+            &_light_gray {
+                color: $contact-logo-color;
+            }
+
+            &_light_red {
+                color: $button-color;
+            }
+        }
+
+        &_weight {
+            &_s {
+                font-weight: 400;
+            }
+
+            &_m {
+                font-weight: 600;
+            }
+        }
+    }
+}

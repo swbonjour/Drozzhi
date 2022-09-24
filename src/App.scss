@@ -1,0 +1,11 @@
+@import 'src/scss/pageSize.scss';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    max-width: $page-max-width;
+    margin: auto;
+    font-family: 'Inter', sans-serif;
+}
