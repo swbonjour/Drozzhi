@@ -4,6 +4,8 @@
         display: flex;
         gap: 2rem;
         &_li {
+            display: flex;
+            align-items: center;
             &__a {
                 text-decoration: none;
             }

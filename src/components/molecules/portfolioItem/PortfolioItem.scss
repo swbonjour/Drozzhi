@@ -1,0 +1,56 @@
+@import 'src/scss/colors.scss';
+
+.portfolio_item {
+    &__content {
+        width: 650.59px;
+        height: 513px;
+        position: relative;
+        border-radius: 8px;
+        margin-top: 3rem;
+        &_tag {
+            position: absolute;
+            bottom: 16px;
+            left: 16px;
+            background-color: $project-label-color;
+            border-radius: 20px;
+            padding-left: 0.4rem;
+            padding-right: 0.4rem;
+            padding-top: 0.2rem;
+            padding-bottom: 0.2rem;
+            text-align: center;
+        }
+        
+        &_purple {
+            background: linear-gradient(90deg, #A18CD1 0%, #FBC2EB 100%), #EEEEEE;
+        }
+
+        &_pink {
+            background: linear-gradient(90deg, #FF9A9E 0%, #FAD0C4 99%, #FAD0C4 100%), #EEEEEE;
+        }
+
+        &_red {
+            background: linear-gradient(90deg, #FFECD2 0%, #FCB69F 100%), #EEEEEE;
+        }
+
+        &_green {
+            background: linear-gradient(90deg, #D4FC79 0%, #96E6A1 100%), #EEEEEE;
+        }
+
+        &_light_blue {
+            background: linear-gradient(90deg, #FDFBFB 0%, #EBEDEE 100%), #EEEEEE;
+        }
+
+        &_blue {
+            background: linear-gradient(90deg, #FFF1EB 0%, #ACE0F9 100%), #EEEEEE;
+        }
+
+        &_article {
+            margin-top: 1rem;
+            width: 650.59px;
+        }
+
+        &_small_tag {
+            margin-top: 0.2rem;
+        }
+    }
+}
