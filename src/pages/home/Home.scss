@@ -5,6 +5,11 @@
     background-image: url('../../img/homePage.png');
     background-size: cover;
     resize: both;
+    @media screen and (max-width: 320px) {
+        max-width: 320px;
+        height: 568px;
+        background-image: ('../../img/smallHome.png');
+    }
 
     &__content {
         width: 94%;
