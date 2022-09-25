@@ -6,7 +6,7 @@ import { Text, Button } from "src/components";
 
 export function Feedback() {
     return (
-        <div>
+        <div className="feedback">
             <header className="feedback__header">
                 <Text text="Оставьте заявку" fontSize="xl" fontWeight="m"></Text>
             </header>
