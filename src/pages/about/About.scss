@@ -1,11 +1,18 @@
 .about {
     &__header {
+        margin-left: 50%;
+        transform: translateX(-50%);
+        display: inline-block;
         &_enumeration {
             display: flex;
             justify-content: space-between;
             width: 90%;
             margin-top: 3rem;
             margin-bottom: 3rem;
+            @media screen and (max-width: 1402px) {
+                flex-direction: column;
+                align-items: flex-start;
+            }
         }
     }
 
