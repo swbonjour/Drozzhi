@@ -1,0 +1,41 @@
+.about {
+    &__header {
+        &_enumeration {
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+        }
+    }
+
+    &__main {
+        display: flex;
+        justify-content: space-between;
+        &_left_side {
+            width: 42%;
+            line-height: 150%;
+            &__statistics {
+                margin-top: 6rem;
+                display: flex;
+                justify-content: space-between;
+                width: 90%;
+                &_projects {
+                    width: 10rem;
+                    &_text {
+                        margin-top: 1rem;
+                    }
+                }
+            }
+            &__button {
+                margin-top: 5.5rem;
+            }
+        }
+        &_right_side {
+            &__text {
+                margin-left: 55%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+}
