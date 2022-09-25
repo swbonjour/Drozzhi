@@ -2,7 +2,7 @@ import React from 'react'
 
 import './App.scss'
 
-import { Home, Portfolio, About, Feedback } from './pages'
+import { Home, Portfolio, About, Feedback, Footer } from './pages'
 
 function App() {
   return (
@@ -11,6 +11,7 @@ function App() {
       <Portfolio></Portfolio>
       <About></About>
       <Feedback></Feedback>
+      <Footer></Footer>
     </div>
   )
 }

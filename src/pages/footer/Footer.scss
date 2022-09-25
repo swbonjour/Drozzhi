@@ -1,0 +1,24 @@
+@import 'src/scss/colors.scss';
+
+.footer {
+    margin-top: 8rem;
+    &__line {
+        width: 100%;
+        height: 0.1rem;
+        opacity: 0.8;
+        background-color: $project-label-color-two;
+    }
+    &__content {
+        display: flex;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        width: 50%;
+        margin-top: 2rem;
+        justify-content: space-between;
+    }
+    &__logo {
+        margin-left: 50%;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+}
