@@ -6,7 +6,7 @@ import { Text, Button } from "src/components";
 
 export function About() {
     return (
-        <div>
+        <div className="about">
             <header className='about__header'>
                 <Text text='О компании' fontSize="xl" fontWeight="m"></Text>
                 <div className='about__header_enumeration'>
@@ -19,9 +19,11 @@ export function About() {
             </header>
             <main className="about__main">
                 <div className="about__main_left_side">
-                    <Text text="Мы — команда специалистов с опытом, энтузиазмом и лёгким недосыпом. Маркетинговое агентство «Дрожжи» было основано "></Text>
-                    <Text text="в 2015 году, как компания, где можно получить комплексное интернет- и oффлайн-продвижение. На сегодняшний день мы не зависим ни от ниши, ни от географии, ни от специфики продукта. "></Text>
-                    <Text text="В портфолио компании сотни успешных кейсов, способных помочь вам в реализации своей идеи."></Text>
+                    <div className="about__main_left_side__description">
+                        <Text text="Мы — команда специалистов с опытом, энтузиазмом и лёгким недосыпом. Маркетинговое агентство «Дрожжи» было основано "></ Text>
+                        <Text text="в 2015 году, как компания, где можно получить комплексное интернет- и oффлайн-продвижение. На сегодняшний день мы   не        зависим ни от ниши, ни от географии, ни от специфики продукта. "></Text>
+                        <Text text="В портфолио компании сотни успешных кейсов, способных помочь вам в реализации своей идеи."></Text>
+                    </div>
                     <div className="about__main_left_side__statistics">
                         <div className='about__main_left_side__statistics_projects'>
                             <Text text="1000+" fontSize="x" fontWeight="m" color="light_red"></Text>
@@ -39,7 +41,7 @@ export function About() {
                     <Button size='large' border="true" borderRadius="medium" className="about__main_left_side__button"><Text text="ПОДРОБНЕЕ" fontSize="xs" color="light_red"></Text></Button>
                 </div>
                 <div className="about__main_right_side">
-                    <img src={require('src/img/team.png')} width={675} height={513} alt="team" />
+                    <img src={require('src/img/team.png')} alt="team" className="about__main_right_side__img"/>
                     <Text text="Команда агентства «Дрожжи»" fontSize="xs" color="light_gray" className="about__main_right_side__text"></Text>
                 </div>
             </main>

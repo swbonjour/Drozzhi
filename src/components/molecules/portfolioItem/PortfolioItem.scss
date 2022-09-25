@@ -7,6 +7,10 @@
         position: relative;
         border-radius: 8px;
         margin-top: 3rem;
+        @media screen and (max-width: 1402px) {
+            max-width: 288px;
+            height: 250px;
+        }
         &_tag {
             position: absolute;
             bottom: 16px;
@@ -18,6 +22,11 @@
             padding-top: 0.2rem;
             padding-bottom: 0.2rem;
             text-align: center;
+            @media screen and (max-width: 1402px) {
+                flex-direction: column;
+                align-items: flex-start;
+                font-size: 14px;
+            }
         }
         
         &_purple {
@@ -47,6 +56,9 @@
         &_article {
             margin-top: 1rem;
             width: 650.59px;
+            @media screen and (max-width: 1402px) {
+                width: 288px;
+            }
         }
 
         &_small_tag {

@@ -28,7 +28,7 @@ export function Portfolio() {
             backgroundColor="pink"
           ></PortfolioItem>
           <PortfolioItem
-            tag="ВЕДЕНИЕ РЕКЛАМНОЙ КОМПАНИИМАРКЕТИНГ"
+            tag="ВЕДЕНИЕ РЕКЛАМНОЙ КОМПАНИИ"
             article="Аудит отдела маркетинга и продаж для Название бренда"
             smallTag="Аудит, маркетинг сюда кратко теги"
             backgroundColor="red"

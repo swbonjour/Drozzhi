@@ -1,19 +1,49 @@
 @import 'src/scss/colors.scss';
 
 .feedback {
+    width: 94%;
+    margin-left: auto;
+    margin-right: auto;
     &__header {
         margin-top: 3rem;
+        @media screen and (max-width: 1402px) {
+            margin-left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            width: 100%;
+        }
     }
 
     &__main {
         margin-top: 4rem;
         display: flex;
         justify-content: space-between;
+        @media screen and (max-width: 1402px) {
+            flex-direction: column;
+            align-items: center;
+            margin-left: 50%;
+            transform: translateX(-50%);
+            margin-top: 2rem;
+        }
         &__left_side {
             &__profile {
                 &_name {
                 margin-top: 1rem;
                 margin-bottom: 0.5rem;
+                @media screen and (max-width: 1402px) {
+                    text-align: center;
+                }
+                }
+                &_img {
+                    @media screen and (max-width: 1402px) {
+                        margin-left: 50%;
+                        transform: translateX(-50%);
+                    }
+                }
+                &_description {
+                    @media screen and (max-width: 1402px) {
+                        text-align: center;
+                    }
                 }
             }
 
@@ -21,6 +51,11 @@
                 margin-top: 4rem;
                 &_links {
                     margin-top: 1rem;
+                    @media screen and (max-width: 1402px) {
+                        margin-left: 50%;
+                        transform: translateX(-50%);
+                        width: 66%;
+                    }
                     &_text {
                         position: relative;
                         display: inline-block;
@@ -45,6 +80,17 @@
 
         &__right_side {
             width: 60%;
+            @media screen and (max-width: 1402px) {
+                margin-top: 4rem;
+            }
+            &__form {
+                @media screen and (max-width: 1402px) {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
             &__input {
                 border: none;
                 &:focus {
@@ -63,13 +109,22 @@
                     width: 200%;
                     height: 0.1rem;
                     background-color: $project-label-color-two;
+                    @media screen and (max-width: 1402px) {
+                        width: 100%;
+                    }
                     }
                     &:nth-child(4)::after {
                         width: 300%;
+                        @media screen and (max-width: 1402px) {
+                            width: 100%;
+                        }
                     }
                     &:nth-child(6)::after {
                         width: 400%;
-                    }  
+                        @media screen and (max-width: 1402px) {
+                            width: 100%;
+                        }
+                    }
                 }
             }
 

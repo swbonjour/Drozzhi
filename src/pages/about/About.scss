@@ -1,4 +1,7 @@
 .about {
+    width: 94%;
+    margin-left: auto;
+    margin-right: auto;
     &__header {
         margin-left: 50%;
         transform: translateX(-50%);
@@ -9,9 +12,11 @@
             width: 90%;
             margin-top: 3rem;
             margin-bottom: 3rem;
+            gap: 2rem;
             @media screen and (max-width: 1402px) {
                 flex-direction: column;
                 align-items: flex-start;
+                gap: 0.2rem;
             }
         }
     }
@@ -19,16 +24,31 @@
     &__main {
         display: flex;
         justify-content: space-between;
+        @media screen and (max-width: 1402px) {
+            flex-direction: column;
+            align-items: center;
+        }
         &_left_side {
             width: 42%;
             line-height: 150%;
+            @media screen and (max-width: 1402px) {
+                min-width: 288px;
+            }
             &__statistics {
                 margin-top: 6rem;
                 display: flex;
                 justify-content: space-between;
                 width: 90%;
+                @media screen and (max-width: 1402px) {
+                    flex-direction: column;
+                    align-items: center;
+                    margin-top: 2rem;
+                }
                 &_projects {
                     width: 10rem;
+                    @media screen and (max-width: 1402px) {
+                        margin-top: 2rem;
+                    }
                     &_text {
                         margin-top: 1rem;
                     }
@@ -36,12 +56,32 @@
             }
             &__button {
                 margin-top: 5.5rem;
+                @media screen and (max-width: 1402px) {
+                    margin-top: 2rem;
+                    margin-bottom: 2rem;
+                    margin-left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+            &__description {
+                text-align: justify;
             }
         }
         &_right_side {
             &__text {
                 margin-left: 55%;
                 transform: translateX(-50%);
+                @media screen and (max-width: 1402px) {
+                    width: 100%;
+                }
+            }
+            &__img {
+                width: 675px;
+                height: 513px;
+                @media screen and (max-width: 1402px) {
+                    width: 288px;
+                    height: 300px;
+                }
             }
         }
     }

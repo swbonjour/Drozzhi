@@ -13,9 +13,9 @@ export function Feedback() {
             <main className="feedback__main">
                 <div className="feedback__main__left_side">
                     <div className="feedback__main__left_side__profile">
-                        <img src={require('src/img/avatar.png')} alt="avatar" width={200} height={200} />
+                        <img src={require('src/img/avatar.png')} alt="avatar" width={200} height={200} className="feedback__main__left_side__profile_img"/>
                         <Text text="Юлия Дижа" fontSize="s" fontWeight="m" className="feedback__main__left_side__profile_name"></Text>
-                        <Text text="Поможет запустить ваш проект" ></Text>
+                        <Text text="Поможет запустить ваш проект" className="feedback__main__left_side__profile_description"></Text>
                     </div>
                     <div className="feedback__main__left_side__download">
                         <Text text="Скачать брифинги на:" fontSize="s" fontWeight="m"></Text>
@@ -29,7 +29,7 @@ export function Feedback() {
                 <div className="feedback__main__right_side">
                     <div>
                         <div>
-                            <form action="post">
+                            <form action="post" className="feedback__main__right_side__form">
                             <Text text="Ваше имя *" fontSize="xs" color="light_gray"></Text>
                             <div className="feedback__main__right_side__input_div">
                             <input className="feedback__main__right_side__input" type="text" />
