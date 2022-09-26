@@ -27,6 +27,13 @@
         position: absolute;
         top: 60rem;
         right: 3rem;
+        @media screen and (max-width: 320px) {
+            position: relative;
+            gap: 1rem;
+            top: 20rem;
+            right: 2rem;
+            justify-content: flex-end;
+        }
         &_item {
             display: flex;
             justify-content: center;
