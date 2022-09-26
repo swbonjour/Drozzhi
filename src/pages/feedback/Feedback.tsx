@@ -1,10 +1,12 @@
 import React from "react";
+import { useForm } from "react-hook-form";
 
 import './Feedback.scss'
 
 import { Text, Button } from "src/components";
 
 export function Feedback() {
+    const { register, handleSubmit } = useForm();
     return (
         <div className="feedback">
             <header className="feedback__header" id="feedback">
@@ -29,18 +31,18 @@ export function Feedback() {
                 <div className="feedback__main__right_side">
                     <div>
                         <div>
-                            <form action="post" className="feedback__main__right_side__form">
+                            <form action="post" className="feedback__main__right_side__form" onSubmit={handleSubmit(() => {})}>
                             <Text text="Ваше имя *" fontSize="xs" color="light_gray"></Text>
                             <div className="feedback__main__right_side__input_div">
-                            <input className="feedback__main__right_side__input" type="text" />
+                            <input className="feedback__main__right_side__input" type="text" {...register("name", {required: true, maxLength: 20})}/>
                             </div>
                             <Text text="Телефон или мессенджер *" fontSize="xs" color="light_gray"></Text>
                             <div className="feedback__main__right_side__input_div">
-                            <input className="feedback__main__right_side__input" type="text" />
+                            <input className="feedback__main__right_side__input" type="text" {...register("phone", {required: true, maxLength: 20})}/>
                             </div>
                             <Text text="Краткое описание задачи *" fontSize="xs" color="light_gray"></Text>
                             <div className="feedback__main__right_side__input_div">
-                            <input className="feedback__main__right_side__input" type="text" />
+                            <input className="feedback__main__right_side__input" type="text" {...register("description", {required: true, maxLength: 20})}/>
                             </div>
                             <Button size="medium" backgroundColor="light_red" border="true" borderRadius="medium" className="feedback__main__right_side__button"><Text text="Отправить" fontSize="s" color="white"></Text></Button>
                             </form>

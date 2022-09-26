@@ -22,7 +22,7 @@ export function Home() {
           <div className="home__content_text">
           <Text text="Маректинговое агенство. С нами вы растете как на дрожжах"></Text>
           </div>
-          <div className="home__contact">
+          <div className="home__contact" id="contact">
             <div className="home__contact_item">
               <WhatsApp></WhatsApp>
               <a href="#" className="home__contact_item_text"><Text text="WHATSAPP" color='gray'></Text></a>
@@ -43,9 +43,9 @@ export function Home() {
           <div className="home__content_text">
           <Text text="Маректинговое агенство. С нами вы растете как на дрожжах"></Text>
           </div>
-          <div className="home__contact">
-              <WhatsApp></WhatsApp>
-              <Telegram></Telegram>
+          <div className="home__contact" id="contact">
+              <a href="#"><WhatsApp></WhatsApp></a>
+              <a href="#"><Telegram></Telegram></a>
           </div>
         </div>
       </main>
