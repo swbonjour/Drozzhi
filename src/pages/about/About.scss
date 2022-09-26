@@ -84,6 +84,23 @@
                     width: 288px;
                     height: 300px;
                 }
+                &_opened {
+                    position: absolute;
+                    margin-left: auto;
+                    margin-right: auto;
+                    left: 0;
+                    right: 0;
+                    text-align: center;
+                    z-index: 9;
+                    width: 1200px;
+                    height: 900px;
+                    transition: all 0.5s;
+                    @media screen and (max-width: 1402px) {
+                        width: 288px;
+                        height: 300px;
+                        position: relative;
+                    }
+                }
             }
         }
     }

@@ -12,7 +12,9 @@ export function Home() {
     <main className="home">
       <div className="home__content">
         <Header></Header>
-        <Text text="Маректинговое агенство. С нами вы растете как на дрожжах" className="home__content_text"></Text>
+        <div className="home__content_text">
+        <Text text="Маректинговое агенство. С нами вы растете как на дрожжах"></Text>
+        </div>
         <div className="home__contact">
           <div className="home__contact_item">
             <WhatsApp></WhatsApp>
