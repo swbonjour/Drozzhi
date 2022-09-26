@@ -14,7 +14,7 @@ export function Header() {
     setWidth(document.documentElement.clientWidth)
   })
 
-  if(width > 320) {
+  if(width > 697) {
     return (
       <header className="header">
         <div className="header__logo">
