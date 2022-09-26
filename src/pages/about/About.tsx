@@ -7,7 +7,7 @@ import { Text, Button } from "src/components";
 export function About() {
     return (
         <div className="about">
-            <header className='about__header'>
+            <header className='about__header' id="about">
                 <Text text='О компании' fontSize="xl" fontWeight="m"></Text>
                 <div className='about__header_enumeration'>
                     <Text text='5' color='light_red' fontSize="m"></Text><Text text='отделов' fontSize="m"></Text>

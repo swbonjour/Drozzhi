@@ -8,7 +8,7 @@ export function Portfolio() {
   return (
     <div>
       <div className="portfolio__content">
-        <header className="portfolio__header">
+        <header className="portfolio__header" id="portfolio">
           <Text text="Портфолио" color="black" fontSize="xl" fontWeight="m"></Text>
           <a href="#" className="portfolio__header_link">
             <Text text="СМОТРЕТЬ ВСЕ ->" color="light_red"></Text>

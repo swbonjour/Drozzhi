@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 
 import { useState } from "react"
 
@@ -27,9 +28,9 @@ export function Burger() {
                 <div className="burger__line_one__rotated"></div>
                 <div className="burger__line_two__rotated"></div>
                 <div className="burger__opened">
-                    <div className="burger__opened_link"><Text text="Портфолио"></Text></div>
-                    <div className="burger__opened_link"><Text text="О Компании"></Text></div>
-                    <div className="burger__opened_link"><Text text="Контакты"></Text></div>
+                    <Link to="portfolio" spy={true} smooth={true} offset={-90} duration={500}><div className="burger__opened_link"><Text text="Портфолио"></Text></div></Link>
+                    <Link to="about" spy={true} smooth={true} offset={-90} duration={500}><div className="burger__opened_link"><Text text="О Компании"></Text></div></Link>
+                    <Link to="contact" spy={true} smooth={true} offset={-90} duration={500}><div className="burger__opened_link"><Text text="Контакты"></Text></div></Link>
                 </div>
             </div>
         )
