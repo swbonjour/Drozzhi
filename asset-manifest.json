@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Drozzhi/static/css/main.dc53e685.css",
+    "main.js": "/Drozzhi/static/js/main.4b2a35e4.js",
+    "static/media/homePage.png": "/Drozzhi/static/media/homePage.fd7129569555aac583a5.png",
+    "static/media/team.png": "/Drozzhi/static/media/team.fb6df81982990ea069ce.png",
+    "static/media/avatar.png": "/Drozzhi/static/media/avatar.70000cff42cbf09116fb.png",
+    "index.html": "/Drozzhi/index.html",
+    "main.dc53e685.css.map": "/Drozzhi/static/css/main.dc53e685.css.map",
+    "main.4b2a35e4.js.map": "/Drozzhi/static/js/main.4b2a35e4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dc53e685.css",
+    "static/js/main.4b2a35e4.js"
+  ]
+}
